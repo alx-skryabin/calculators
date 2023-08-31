@@ -1,0 +1,32 @@
+@import "../../../styles/variables";
+
+.as__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: $heightHeader;
+  background: #fbf75f;
+
+  .as__header_logo {
+    a {
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #333;
+      transition: .2s;
+
+      &:hover {
+        color: royalblue;
+        transition: .2s;
+      }
+    }
+  }
+
+  .as__header_menu {
+    display: flex;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}
