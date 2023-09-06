@@ -1,12 +1,10 @@
 # Calculators
 
-Demo `link`: [bank-just.web.app](https://bank-just.web.app/) <br />
+Demo `link`: [calculators-online.web.app](https://calculators-online.web.app/) <br />
 
 ### Functional:
 
-* User authorization and registration `JWT` cookie
-* Localization support (`ru`, `en`)
-* Cross-platform interface (`adaptive` layout)
+* Compound percent calculator
 * etc. in development
 
 ### Available Scripts:
@@ -18,9 +16,6 @@ In the project directory, you can run:
 Runs the app in the `development` mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-#### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
 
 #### `npm build`
 
@@ -33,7 +28,7 @@ Your app is ready to be deployed!
 #### `npm deploy`
 
 Launch the deployment of the client part through the `firebase` service. <br />
-Demo link: [bank-just.web.app](https://bank-just.web.app/)
+Demo link: [calculators-online.web.app](https://calculators-online.web.app/)
 
 1. Make commit
 2. npm run build
@@ -47,4 +42,4 @@ Demo link: [bank-just.web.app](https://bank-just.web.app/)
 
 ### Author:
 `Github:` [@alx-skryabin](https://github.com/alx-skryabin) <br />
-`Repository:` [Client side](https://github.com/alx-skryabin/bank-app) <br />
+`Repository:` [Client side](https://github.com/alx-skryabin/calculators) <br />

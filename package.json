@@ -10,6 +10,7 @@
     "@types/react-dom": "^18.2.7",
     "typescript": "^5.2.2",
     "antd": "^5.8.5",
+    "firebase": "^9.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.8.0",
@@ -19,7 +20,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy": "firebase deploy"
   },
   "eslintConfig": {
     "extends": [
