@@ -5,3 +5,20 @@
 .as__page {
   padding: 15px;
 }
+
+.as__page_calc {
+  max-width: 800px;
+  border-left: 1px solid #333;
+  border-right: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.as__calc_title {
+  margin-bottom: 30px;
+}
+
+.as__calc_form {
+  margin-bottom: 20px;
+}

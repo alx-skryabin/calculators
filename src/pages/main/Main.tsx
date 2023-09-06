@@ -1,16 +1,17 @@
 import React from 'react'
 import {PATHS} from '../../configs/route-paths.config'
-import {Link} from 'react-router-dom'
+import CardMain from '../../components/ui/cards/CardMain'
 import './Main.scss'
 
 const Main = () => {
   return (
     <div className="as__page">
-      <ul>
-        <li>
-          <Link to={PATHS.compoundPercent}>Compound percent</Link>
-        </li>
-      </ul>
+      <div className="as__page-main-cards">
+        <CardMain
+          title="Сложный процент" link={PATHS.compoundPercent}
+          text="Начисление процентов, при котором по окончании каждого периода начисленные проценты становятся основной суммой."
+        />
+      </div>
     </div>
   )
 }

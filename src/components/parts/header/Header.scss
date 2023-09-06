@@ -6,17 +6,18 @@
   align-items: center;
   padding: 0 15px;
   height: $heightHeader;
-  background: #fbf75f;
+  color: #fff;
+  background: $primaryLiteColor;
 
   .as__header_logo {
     a {
       font-size: 1.2em;
       font-weight: 600;
-      color: #333;
+      color: #fff;
       transition: .2s;
 
       &:hover {
-        color: royalblue;
+        color: #ddd;
         transition: .2s;
       }
     }
@@ -27,6 +28,12 @@
 
     span {
       font-weight: 600;
+      cursor: pointer;
+    }
+
+    .as__joke-done {
+      color: lime;
+      cursor: default;
     }
   }
 }

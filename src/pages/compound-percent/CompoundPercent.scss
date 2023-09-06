@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.as__compound-percent_more {
+  margin: 20px 0;
+
+  div {
+    margin-bottom: 5px;
+  }
+
+  i {
+    width: 20px;
+    color: $primaryDarkColor;
+  }
+
+  strong {
+    color: $successLiteColor;
+  }
+}

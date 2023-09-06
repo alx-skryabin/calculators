@@ -7,11 +7,11 @@ const Footer = () => {
     <div className="as__footer">
       <div className="as__footer_line">
         <span>Feedback? — </span>
-        <Link to="https://vk.com/alx.skryabin">vk</Link>
+        <Link to="https://t.me/AlxSkryabin" target="_blank">telegram</Link>
       </div>
       <div className="as__footer_line">
         <span>Improvements? — </span>
-        <Link to="https://github.com/alx-skryabin">github</Link>
+        <Link to="https://github.com/alx-skryabin" target="_blank">github</Link>
       </div>
     </div>
   )
