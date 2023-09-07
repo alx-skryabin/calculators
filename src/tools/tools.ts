@@ -6,7 +6,7 @@ const validationNumber = (value: string) => {
 }
 
 const toMoney = (n: string | number) => {
-  const val = typeof n === 'number' ? n : parseFloat(n)
+  const val = typeof n === 'number' ? n : n ? parseFloat(n) : 0
   return val.toFixed(1)
     .replace(/(\d)(?=(\d{3})+\.)/g, "$1 ")
 }

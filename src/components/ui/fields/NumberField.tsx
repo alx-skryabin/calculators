@@ -23,7 +23,7 @@ const NumberField = ({name, label, initial, required = true}: {
       initialValue={initial || ''}
       hasFeedback
     >
-      <Input/>
+      <Input size="large"/>
     </Form.Item>
   )
 }
