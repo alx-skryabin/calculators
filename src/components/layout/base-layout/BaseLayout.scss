@@ -3,6 +3,10 @@
 .as__base-layout {
   background: #f1f1f1;
 
+  .as__base-header {
+    height: $heightHeader;
+  }
+
   .as__base-body {
     min-height: $heightBody;
   }

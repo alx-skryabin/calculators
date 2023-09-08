@@ -9,4 +9,8 @@
   grid-gap: 15px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+  .as__base-percent_result {
+    text-align: center;
+  }
 }

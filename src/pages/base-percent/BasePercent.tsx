@@ -14,7 +14,7 @@ const calcPercentForm1 = (number: string, percent: string) => {
 }
 
 const calcPercentForm2 = (number1: string, number2: string) => {
-  return toMoney((100 * toNum(number1)) / toNum(number2))
+  return toMoney((100 * toNum(number1)) / toNum(number2) || 0)
 }
 
 const calcPercentForm3 = (number: string, percent: string) => {
@@ -78,7 +78,8 @@ const BasePercent = () => {
             <div className="as__base-percent_forms">
               <NumberField name="number" label="Число" initial={resForm1.number}/>
               <NumberField name="percent" label="Процент" initial={resForm1.percent}/>
-              <div>
+              <div className="as__base-percent_result">
+                Результат
                 <Statistic
                   title={`${resForm1.percent || 0}% от ${toMoney(resForm1.number)} =`}
                   value={calcPercentForm1(resForm1.number, resForm1.percent)}
@@ -94,7 +95,8 @@ const BasePercent = () => {
             <div className="as__base-percent_forms">
               <NumberField name="number" label="Число 1" initial={resForm2.number}/>
               <NumberField name="percent" label="Число 2" initial={resForm2.percent}/>
-              <div>
+              <div className="as__base-percent_result">
+                Результат
                 <Statistic
                   title={`${toMoney(resForm2.number)} от ${toMoney(resForm2.percent)} =`}
                   value={`${calcPercentForm2(resForm2.number, resForm2.percent)} %`}
@@ -110,7 +112,8 @@ const BasePercent = () => {
             <div className="as__base-percent_forms">
               <NumberField name="percent" label="Процент" initial={resForm3.percent}/>
               <NumberField name="number" label="Число" initial={resForm3.number}/>
-              <div>
+              <div className="as__base-percent_result">
+                Результат
                 <Statistic
                   title={`${toMoney(resForm3.number)} + ${resForm3.percent || 0}% =`}
                   value={calcPercentForm3(resForm3.number, resForm3.percent)}
@@ -126,7 +129,8 @@ const BasePercent = () => {
             <div className="as__base-percent_forms">
               <NumberField name="percent" label="Процент" initial={resForm4.percent}/>
               <NumberField name="number" label="Число" initial={resForm4.number}/>
-              <div>
+              <div className="as__base-percent_result">
+                Результат
                 <Statistic
                   title={`${toMoney(resForm4.number)} - ${resForm4.percent || 0}% =`}
                   value={calcPercentForm4(resForm4.number, resForm4.percent)}
