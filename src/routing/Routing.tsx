@@ -8,6 +8,7 @@ import NotFound from '../components/parts/not-found/NotFound'
 const Main = lazy(() => import('../pages/main/Main'))
 const CompoundPercent = lazy(() => import('../pages/compound-percent/CompoundPercent'))
 const BasePercent = lazy(() => import('../pages/base-percent/BasePercent'))
+const PetrolCost = lazy(() => import('../pages/petrol-cost/PetrolCost'))
 
 
 export const Routing = () => {
@@ -17,6 +18,7 @@ export const Routing = () => {
         <Route path={PATHS.main} element={<Main/>}/>
         <Route path={PATHS.compoundPercent} element={<CompoundPercent/>}/>
         <Route path={PATHS.basePercent} element={<BasePercent/>}/>
+        <Route path={PATHS.petrolCost} element={<PetrolCost/>}/>
       </Route>
       <Route path='*' element={<NotFound/>}/>
     </Routes>

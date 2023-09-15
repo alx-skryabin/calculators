@@ -1,0 +1,16 @@
+.as__petrol-cost_grid_2 {
+  grid-gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+}
+
+.as__petrol-cost_grid_3 {
+  grid-gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 2fr));
+
+  .ant-statistic {
+    text-align: center;
+    margin: 15px 0;
+  }
+}

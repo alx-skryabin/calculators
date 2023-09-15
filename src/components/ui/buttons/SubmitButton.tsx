@@ -18,7 +18,7 @@ const SubmitButton = ({form}: { form: FormInstance }) => {
   }, [values])
 
   return (
-    <Button type="primary" htmlType="submit" disabled={!submittable}>
+    <Button type="primary" htmlType="submit" size="large" disabled={!submittable}>
       <i className="fa-solid fa-calculator"/> Рссчитать
     </Button>
   )

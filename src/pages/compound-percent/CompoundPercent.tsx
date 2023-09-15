@@ -80,7 +80,7 @@ const CompoundPercent = () => {
             <Form.Item>
               <Space>
                 <SubmitButton form={form}/>
-                <Button htmlType="reset"><i className="fa-solid fa-broom"/> Очистить</Button>
+                <Button htmlType="reset" size="large"><i className="fa-solid fa-broom"/> Очистить</Button>
               </Space>
             </Form.Item>
           </Form>

@@ -5,5 +5,6 @@ interface path {
 export const PATHS: path = {
   main: '/',
   compoundPercent: '/compound-percent',
-  basePercent: '/base-percent'
+  basePercent: '/base-percent',
+  petrolCost: '/petrol-cost'
 }
