@@ -3,6 +3,7 @@ import {Outlet} from 'react-router-dom'
 import Header from '../../parts/header/Header'
 import Sidebar from '../../parts/sidebar/Sidebar'
 import Footer from '../../parts/footer/Footer'
+import FireworkEffect from '../firework-effect/FireworkEffect'
 import './BaseLayout.scss'
 
 export const BaseLayout = () => {
@@ -12,6 +13,7 @@ export const BaseLayout = () => {
         <Header/>
       </div>
       <div className="as__base-body">
+        <FireworkEffect/>
         <Sidebar/>
         <Outlet/>
       </div>
