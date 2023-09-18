@@ -4,7 +4,7 @@ import './FireworkEffect.scss'
 
 const FireworkEffect = () => {
   return (
-    <div className="as__firework-effect as__firework-effect_hide">
+    <div className="as__firework-effect">
       <div className="before"/>
       <div className="after"/>
     </div>

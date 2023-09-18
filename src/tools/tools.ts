@@ -1,4 +1,13 @@
 import {REG_EXP} from '../configs/dev.config'
+import {toggleFire} from '../store/slices/systemSlice'
+import {AppDispatch} from '../store/store'
+
+const runFire = (dispatch: AppDispatch) => {
+  dispatch(toggleFire(true))
+  setTimeout(() => {
+    dispatch(toggleFire(false))
+  }, 5000)
+}
 
 const validationNumber = (value: string) => {
   if (!value || REG_EXP.IS_NUMBER.test(value)) return Promise.resolve()
@@ -16,6 +25,7 @@ const toNum = (n: string): number => {
 }
 
 export {
+  runFire,
   validationNumber,
   toMoney,
   toNum
